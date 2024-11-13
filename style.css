@@ -1,0 +1,496 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+a {
+    color: #262626;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ! learn about this , how container sizing works */
+.container {
+    width: 90%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* . NAVIGATION */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px 0;
+    font-size: 13px;
+}
+
+.main-nav .logo {
+    width: 110px;
+}
+
+.main-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav ul.main-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* to give space to the list items  */
+.main-nav ul li {
+    padding: 0 10px;
+}
+
+.main-nav ul li a {
+    padding-bottom: 3px;
+}
+
+.main-nav ul li a:hover {
+    border-bottom: 2px solid #262626;
+}
+
+.right-nav ul,
+i {
+    padding: 0 10px;
+}
+
+/* . showcase  - Part 1*/
+.new_logo {
+    font-size: 15px;
+    background-color: #ffb900;
+    padding: 3px 0 3px 0;
+    width: 50px;
+    text-align: center;
+    color: #262626;
+    margin-bottom: 10px;
+}
+
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: #0067b8;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* . showcase  - Part 2*/
+.showcase {
+    width: 100%;
+    height: 400px;
+    background: url(img/showcase.avif) no-repeat center center/cover;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0 20px 0;
+}
+
+.container-2 {
+    margin-left: 40px;
+    width: 350px;
+    padding: 20px 20px 20px 30px;
+}
+
+.container-2 p {
+    padding: 10px 0 10px 0;
+}
+
+.container-2 h1 {
+    font-weight: 600;
+}
+
+/* .MINI LOGOS */
+.mini_logos {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    gap: 50px;
+}
+
+.mini_logos div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.mini_logos a {
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: bold;
+    color: #0067b8;
+}
+
+.mini_logos img {
+    width: 45px;
+}
+
+/* .minilogo */
+.miniLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.miniLogo i {
+    width: 50px;
+}
+
+/* .Home CARDS */
+.home-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 50px;
+}
+
+.home-cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.home-cards .card {
+    height: 100%;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.home-cards img {
+    width: 100%;
+}
+
+.home-cards h2,
+p {
+    padding: 0 20px 0 20px;
+    margin-top: 15px;
+}
+
+.home-cards .btn {
+    display: inline-block;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 20px;
+    width: 140px;
+}
+
+/* .XBOX */
+.xbox {
+    width: 100%;
+    height: 500px;
+    background: url(img/xbox.avif) no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 90px 0 40px 0;
+}
+
+.xbox .content {
+    width: 20%;
+    padding: 0px;
+    margin-left: 120px;
+}
+
+.xbox .content p {
+    margin: 20px 0 10px 0;
+    padding-left: 0px
+}
+
+.xbox .content .btn {
+    margin-bottom: 20px;
+}
+
+.xbox .content a {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.xbox .content span {
+    font-weight: 600;
+
+}
+
+.xbox .content h2 {
+    line-height: 1.3;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.business h2 {
+    padding: 20px 0px 0px 0px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+/* .socials */
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.socials .socials-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.socials .socials-icons p {
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* .footer */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: #f8f9fa;
+    justify-items: center;
+    padding: 40px;
+
+}
+
+.footer .footer-section p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.7;
+    line-height: 1.5;
+}
+
+.footer .footer-section {
+    /* padding: 30px 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.footer .footer-section a {
+    opacity: .8;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.footer .footer-section a:hover {
+    opacity: 1;
+    text-decoration: underline;
+
+}
+
+/* .last-section */
+.last-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+    background-color: #f8f9fa;
+    font-size: 15px;
+
+    /* height: 40px; */
+}
+
+.last-section .last-section-1 ul {
+    display: flex;
+}
+
+.last-section a {
+    padding-right: 10px;
+    opacity: .8;
+    font-size: 12px;
+}
+
+.last-section a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+
+
+/* !MEDIA QUERIES */
+@media (max-width:1051px) {
+    .footer {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: start;
+        gap: 20px;
+    }
+
+    .xbox .content {
+        width: 150px;
+        margin-left: 50px;
+    }
+
+    .xbox .content h2 {
+        font-size: 25px;
+    }
+
+
+    .xbox .content .btn {
+        display: none;
+    }
+}
+
+@media (max-width:700px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-btn:hover {
+        opacity: 0.5;
+    }
+
+    .main-nav .right-menu a {
+        display: none;
+        /* margin-right:50px ; */
+    }
+
+    .fixed-position {
+        position: fixed;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .main-nav ul.main-menu {
+        margin-left: 0px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #f2f2f2;
+        width: 50%;
+        height: 100%;
+        border-right: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .main-nav ul.main-menu li {
+        padding: 15px;
+        border-bottom: #ccc solid 2px;
+        font-size: 15px;
+    }
+
+    .main-nav ul.main-menu li:last-child {
+        border-bottom: 0;
+    }
+
+    .main-nav ul.main-menu.show {
+        transform: translateX(-20px);
+    }
+
+    .showcase {
+        background: url(img/image.png) no-repeat center center;
+    }
+
+    .home-cards {
+        margin-top: 150px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .xbox {
+        height: 300px;
+        margin-bottom: 0px;
+    }
+
+    .xbox .content {
+        width: 150px;
+        margin-left: 10px;
+    }
+
+    .xbox .content h2 {
+        font-size: 20px;
+    }
+
+    .xbox .content p,
+    .btn {
+        display: none;
+    }
+
+    .business h2 {
+        display: none;
+    }
+
+    /* .footer */
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: start;
+        gap: 20px;
+    }
+
+    .footer .footer-section {
+        gap: 3px;
+
+    }
+
+    .footer .footer-section a {
+        font-size: 15px;
+    }
+
+    .last-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .last-section .last-section-1 ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+@media (max-width:500px) {
+    .home-cards {
+        margin-top: 150px;
+        grid-template-columns: 1fr;
+    }
+}
