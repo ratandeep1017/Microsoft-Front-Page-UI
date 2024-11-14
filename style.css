@@ -469,7 +469,14 @@ p {
         gap: 3px;
 
     }
-
+.footer .footer-section p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 1;
+    line-height: 1.5;
+}
     .footer .footer-section a {
         font-size: 15px;
     }
