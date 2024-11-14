@@ -442,25 +442,22 @@ p {
     }
 
     .xbox .content {
-        /* width: 150px; */
         margin-left: 30px;
     }
 
     .xbox .content h2 {
         font-size: 30px;
-        width: 400px;
+        width: 300px;
         padding: 0 10px 0 0;
     }
 
     .xbox .content p {
         padding: 0 10px 0 0;
-        width: 400px;
+        width: 300px;
     }
 
     .xbox .content .btn {
         display: none;
-        width: 300px;
-
     }
 
     .business h2 {
