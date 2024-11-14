@@ -438,20 +438,29 @@ p {
     .xbox {
         height: 300px;
         margin-bottom: 0px;
+        background: url(img/image.png) no-repeat center center;
     }
 
     .xbox .content {
-        width: 150px;
-        margin-left: 10px;
+        /* width: 150px; */
+        margin-left: 30px;
     }
 
     .xbox .content h2 {
-        font-size: 20px;
+        font-size: 30px;
+        width: 400px;
+        padding: 0 10px 0 0;
     }
 
-    .xbox .content p,
-    .btn {
+    .xbox .content p {
+        padding: 0 10px 0 0;
+        width: 400px;
+    }
+
+    .xbox .content .btn {
         display: none;
+        width: 300px;
+
     }
 
     .business h2 {
@@ -469,14 +478,16 @@ p {
         gap: 3px;
 
     }
-.footer .footer-section p {
-    padding: 0px;
-    margin: 0px;
-    font-size: 20px;
-    font-weight: 600;
-    opacity: 1;
-    line-height: 1.5;
-}
+
+    .footer .footer-section p {
+        padding: 0px;
+        margin: 0px;
+        font-size: 20px;
+        font-weight: 600;
+        opacity: 1;
+        line-height: 1.5;
+    }
+
     .footer .footer-section a {
         font-size: 15px;
     }
@@ -485,7 +496,6 @@ p {
         display: flex;
         flex-direction: column;
     }
-
 
     .last-section .last-section-1 ul {
         display: flex;
