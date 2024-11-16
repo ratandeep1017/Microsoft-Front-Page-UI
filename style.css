@@ -354,7 +354,16 @@ p {
 
 
 /* !MEDIA QUERIES */
-@media (max-width:1051px) {
+@media (max-width:1050px) {
+    
+    .main-nav .right-menu li details {
+        display: none;
+    }
+
+    .main-nav .right-menu a span {
+        display: none;
+    }
+
     .footer {
         grid-template-columns: repeat(3, 1fr);
         justify-items: start;
@@ -384,12 +393,9 @@ p {
     .menu-btn:hover {
         opacity: 0.5;
     }
-
-    .main-nav .right-menu a {
-        display: none;
-        /* margin-right:50px ; */
+    .main-nav {
+        justify-content: flex-start;
     }
-
     .fixed-position {
         position: fixed;
         width: 100%;
