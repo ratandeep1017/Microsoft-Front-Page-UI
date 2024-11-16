@@ -354,7 +354,7 @@ p {
 
 
 /* !MEDIA QUERIES */
-@media (max-width:1050px) {
+@media (max-width:1054px) {
     
     .main-nav .right-menu li details {
         display: none;
