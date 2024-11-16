@@ -355,6 +355,10 @@ p {
 
 /* !MEDIA QUERIES */
 @media (max-width:1054px) {
+        .right-nav ul,
+        i {
+            padding: 0 5px;
+        }
     
     .main-nav .right-menu li details {
         display: none;
